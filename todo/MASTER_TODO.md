@@ -102,6 +102,8 @@ Every phase starts **PENDING**. Mark a phase complete only with linked evidence 
 
 ## P3 — Recover native lifecycle and protocol boundaries
 
+Start with [E01 — Owned AppKit window lifecycle trace](FIRST_EXPERIMENT.md), a bounded experiment specification with automation responsibilities and evidence criteria. Its completion is only part of the P3 gate.
+
 - [ ] Trace only the owned client: initialization, connection, create, first commit/present, resize, and destruction.
 - [ ] Inspect matching guest cache images/stubs; record ABI provenance before interpreting arguments.
 - [ ] Identify endpoint lookups, message families, port-right ownership, notifications, context/resource identities, and ready/release synchronization.

@@ -1,0 +1,2 @@
+Executable=/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer
+warning: Specifying ':' in the path is deprecated and will not work in a future release

@@ -1,0 +1,125 @@
+{
+  "sha": "dd845723416f5fe92af49fad5ebab00369e07edd",
+  "node_id": "C_kwDOCwV9a9oAKGRkODQ1NzIzNDE2ZjVmZTkyYWY0OWZhZDVlYmFiMDAzNjllMDdlZGQ",
+  "commit": {
+    "author": {
+      "name": "Åsmund Vikane",
+      "email": "aasvi93@hotmail.com",
+      "date": "2026-06-14T12:40:04Z"
+    },
+    "committer": {
+      "name": "Åsmund Vikane",
+      "email": "aasvi93@hotmail.com",
+      "date": "2026-06-14T12:40:04Z"
+    },
+    "message": "#2799 fix scripting-addition add_space for macOS 26.6 Apple Silicon",
+    "tree": {
+      "sha": "1db2b4fb3cacea1096c4ec73ee45f1cd45a07348",
+      "url": "https://api.github.com/repos/asmvik/yabai/git/trees/1db2b4fb3cacea1096c4ec73ee45f1cd45a07348"
+    },
+    "url": "https://api.github.com/repos/asmvik/yabai/git/commits/dd845723416f5fe92af49fad5ebab00369e07edd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/asmvik/yabai/commits/dd845723416f5fe92af49fad5ebab00369e07edd",
+  "html_url": "https://github.com/asmvik/yabai/commit/dd845723416f5fe92af49fad5ebab00369e07edd",
+  "comments_url": "https://api.github.com/repos/asmvik/yabai/commits/dd845723416f5fe92af49fad5ebab00369e07edd/comments",
+  "author": {
+    "login": "asmvik",
+    "id": 6175959,
+    "node_id": "MDQ6VXNlcjYxNzU5NTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6175959?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/asmvik",
+    "html_url": "https://github.com/asmvik",
+    "followers_url": "https://api.github.com/users/asmvik/followers",
+    "following_url": "https://api.github.com/users/asmvik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/asmvik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/asmvik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/asmvik/subscriptions",
+    "organizations_url": "https://api.github.com/users/asmvik/orgs",
+    "repos_url": "https://api.github.com/users/asmvik/repos",
+    "events_url": "https://api.github.com/users/asmvik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/asmvik/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "asmvik",
+    "id": 6175959,
+    "node_id": "MDQ6VXNlcjYxNzU5NTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6175959?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/asmvik",
+    "html_url": "https://github.com/asmvik",
+    "followers_url": "https://api.github.com/users/asmvik/followers",
+    "following_url": "https://api.github.com/users/asmvik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/asmvik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/asmvik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/asmvik/subscriptions",
+    "organizations_url": "https://api.github.com/users/asmvik/orgs",
+    "repos_url": "https://api.github.com/users/asmvik/repos",
+    "events_url": "https://api.github.com/users/asmvik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/asmvik/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2d743f4bea98b650ae7dec9f459db600323ca29d",
+      "url": "https://api.github.com/repos/asmvik/yabai/commits/2d743f4bea98b650ae7dec9f459db600323ca29d",
+      "html_url": "https://github.com/asmvik/yabai/commit/2d743f4bea98b650ae7dec9f459db600323ca29d"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "additions": 3,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "2a16c41bd6a5aa3e3b456428e5fdcb58fcd8d303",
+      "filename": "CHANGELOG.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/asmvik/yabai/blob/dd845723416f5fe92af49fad5ebab00369e07edd/CHANGELOG.md",
+      "raw_url": "https://github.com/asmvik/yabai/raw/dd845723416f5fe92af49fad5ebab00369e07edd/CHANGELOG.md",
+      "contents_url": "https://api.github.com/repos/asmvik/yabai/contents/CHANGELOG.md?ref=dd845723416f5fe92af49fad5ebab00369e07edd",
+      "patch": "@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm\n \n ## [Unreleased]\n ### Changed\n+- Fixed scripting-addition *add_space* pattern for macOS 26.6 Apple Silicon arm64 [#2799](https://github.com/asmvik/yabai/issues/2799)\n - Fixed minor memory leak on space destruction, and added a few missing null checks to SkyLight API calls [#2791](https://github.com/asmvik/yabai/issues/2791)\n \n ## [7.1.25] - 2026-05-08"
+    },
+    {
+      "sha": "b0d19ace3ff4ac3e076fb3a605f5743161cc442b",
+      "filename": "src/osax/arm64_payload.m",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/asmvik/yabai/blob/dd845723416f5fe92af49fad5ebab00369e07edd/src%2Fosax%2Farm64_payload.m",
+      "raw_url": "https://github.com/asmvik/yabai/raw/dd845723416f5fe92af49fad5ebab00369e07edd/src%2Fosax%2Farm64_payload.m",
+      "contents_url": "https://api.github.com/repos/asmvik/yabai/contents/src%2Fosax%2Farm64_payload.m?ref=dd845723416f5fe92af49fad5ebab00369e07edd",
+      "patch": "@@ -175,7 +175,7 @@ uint64_t get_set_front_window_offset(NSOperatingSystemVersion os_version) {\n const char *get_add_space_pattern(NSOperatingSystemVersion os_version) {\n     if (os_version.majorVersion == 26) {\n         if (os_version.minorVersion >= 4) {\n-            return \"7F 23 03 D5 E1 03 1E AA 48 89 FC 97 FE 03 01 AA FD 7B 05 A9 FD 43 01 91 F3 03 14 AA F5 03\";\n+            return \"7F 23 03 D5 E1 03 1E AA ?? ?? ?? 97 FE 03 01 AA FD 7B 05 A9 FD 43 01 91 F3 03 14 AA F5 03\";\n         }\n         return \"7F 23 03 D5 FF C3 01 D1 E1 03 1E AA ?? ?? 00 94 FE 03 01 AA FD 7B 06 A9 FD 83 01 91 F3 03\";\n     } else if (os_version.majorVersion == 15) {"
+    },
+    {
+      "sha": "2941071cb6a3a1f95a3d502d3669ec1ab91a0720",
+      "filename": "src/osax/common.h",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/asmvik/yabai/blob/dd845723416f5fe92af49fad5ebab00369e07edd/src%2Fosax%2Fcommon.h",
+      "raw_url": "https://github.com/asmvik/yabai/raw/dd845723416f5fe92af49fad5ebab00369e07edd/src%2Fosax%2Fcommon.h",
+      "contents_url": "https://api.github.com/repos/asmvik/yabai/contents/src%2Fosax%2Fcommon.h?ref=dd845723416f5fe92af49fad5ebab00369e07edd",
+      "patch": "@@ -4,7 +4,7 @@\n #define SA_SOCKET_PATH_FMT \"/tmp/yabai-sa_%s.socket\"\n #define SA_SOCKET_BUFF_LEN 0x1000\n \n-#define OSAX_VERSION                \"2.1.29\"\n+#define OSAX_VERSION                \"2.1.30\"\n \n #define OSAX_ATTRIB_DOCK_SPACES     0x01\n #define OSAX_ATTRIB_DPPM            0x02"
+    }
+  ]
+}

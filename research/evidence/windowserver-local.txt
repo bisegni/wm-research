@@ -1,0 +1,170 @@
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+arm64
+System Integrity Protection status: enabled.
+Authenticated Root status: enabled
+/System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer:
+	/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight (compatibility version 64.0.0, current version 600.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)
+51a949ae77519ecca2efe2d9176cf85636a9fd91e2ba5b70817616c3b315ed7b  /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+lrwxr-xr-x  1 root  wheel  25 Sep 24 00:10 /System/Library/PrivateFrameworks/SkyLight.framework/SkyLight -> Versions/Current/SkyLight
+system/com.apple.WindowServer = {
+	active count = 10
+	path = /System/Library/LaunchDaemons/com.apple.WindowServer.plist
+	type = LaunchDaemon
+	state = running
+
+	program = /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+	arguments = {
+		/System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+		-daemon
+	}
+
+	default environment = {
+		PATH => /usr/bin:/bin:/usr/sbin:/sbin
+	}
+
+	environment = {
+		MallocNanoZone => 1
+		OSLogRateLimit => 64
+		MallocSpaceEfficient => 0
+		XPC_SERVICE_NAME => com.apple.WindowServer
+	}
+
+	domain = system
+	minimum runtime = 10
+	base minimum runtime = 10
+	exit timeout = 5
+	runs = 1
+	pid = 450
+	immediate reason = ipc (mach)
+	forks = 0
+	execs = 1
+	initialized = 1
+	trampolined = 1
+	started suspended = 0
+	proxy started suspended = 0
+	checked allocations = 0 (queried = 1)
+	checked allocations reason = no host
+	checked allocations flags = 0x0
+	last exit code = (never exited)
+
+	semaphores = {
+		provides events => 1
+	}
+
+	endpoints = {
+		"com.apple.SpatialConnect.host" = {
+			port = 0x1421b
+			active = 1
+			managed = 1
+			reset = 0
+			hide = 1
+			watching = 0
+		}
+		"com.apple.VirtualDisplay" = {
+			port = 0x14883
+			active = 1
+			managed = 1
+			reset = 0
+			hide = 1
+			watching = 0
+		}
+		"com.apple.CoreDisplay.Notification" = {
+			port = 0x14103
+			active = 1
+			managed = 1
+			reset = 1
+			hide = 1
+			watching = 0
+		}
+		"com.apple.CARenderServer" = {
+			port = 0x11e03
+			active = 1
+			managed = 1
+			reset = 0
+			hide = 1
+			watching = 0
+		}
+		"com.apple.windowserver.watchdog" = {
+			port = 0x14003
+			active = 1
+			managed = 1
+			reset = 0
+			hide = 1
+			watching = 0
+		}
+		"com.apple.backboard.hid-services.xpc" = {
+			port = 0x11f03
+			active = 1
+			managed = 1
+			reset = 0
+			hide = 0
+			watching = 0
+			non-launching = 1
+		}
+		"com.apple.CoreDisplay.master" = {
+			port = 0x13f03
+			active = 0
+			managed = 1
+			reset = 0
+			hide = 1
+			watching = 0
+		}
+		"com.apple.windowserver" = {
+			port = 0x12003
+			active = 1
+			managed = 1
+			reset = 0
+			hide = 0
+			watching = 0
+		}
+		"com.apple.iohideventsystem" = {
+			port = 0x2011f
+			active = 1
+			managed = 1
+			reset = 1
+			hide = 0
+			watching = 0
+		}
+		"com.apple.windowserver.active" = {
+			port = 0x13e03
+			active = 1
+			managed = 1
+			reset = 0
+			hide = 1
+			watching = 0
+		}
+	}
+
+	resource coalition = {
+		ID = 385
+		type = resource
+		state = active
+		active count = 1
+		name = com.apple.WindowServer
+	}
+
+	jetsam coalition = {
+		ID = 386
+		type = jetsam
+		state = active
+		active count = 1
+		name = com.apple.WindowServer
+	}
+
+	spawn type = interactive (4)
+	jetsam priority = 170
+	jetsam memory limit (active) = (unlimited)
+	jetsam memory limit (inactive) = (unlimited)
+	jetsamproperties category = daemon
+	jetsam thread limit = 32
+	cpumon = default
+	exponential throttling grace limit = 10
+	job state = running
+	conclave = com.apple.backboardd.conclave
+	sanitizer flags = 0x0
+
+	properties = partial import | inferred program | system service | exponential throttling | tle system
+}

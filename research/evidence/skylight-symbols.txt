@@ -1,0 +1,9 @@
+SLSMainConnectionID PRESENT
+SLSNewConnection PRESENT
+SLSGetWindowBounds PRESENT
+SLSMoveWindow PRESENT
+SLSOrderWindow PRESENT
+SLSSetWindowLevel PRESENT
+SLSRegisterConnectionNotifyProc PRESENT
+SLSNewWindow PRESENT
+SLSReleaseWindow PRESENT
